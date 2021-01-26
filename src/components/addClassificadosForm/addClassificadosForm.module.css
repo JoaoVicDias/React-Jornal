@@ -1,0 +1,85 @@
+.addClassificados{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.514);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    opacity: 0;
+    transform: translateY(-100vh);
+    transition: all ease-in-out 0.6s ;
+}
+
+.addClassificadosForm{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
+    background-color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.addClassificadosForm__title{
+    color: black;
+    margin: 20px 0 50px ;
+}
+
+.addClassificadosForm__label{
+    display: block;
+    margin:  30px 0;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.addClassificadosForm__btn{
+    width: 30%;
+    padding: 10px 0;
+    color: white;
+    background-color:black;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.closeButton{
+    position: absolute;
+    top: 2px;
+    right:8px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.addClassificadosForm__btn:hover,
+.addClassificadosForm__btn:active{
+    background-color:#147bbb;
+}
+
+
+.addClassificadosForm__btn:disabled{
+    background-color: rgba(26, 25, 25, 0.486);
+    cursor: not-allowed;
+}
+
+
+@media(max-width:780px){    
+    .addClassificadosForm__btn{
+        width: 40%;
+    }
+}   
+
+@media(max-width:600px){
+
+    .addClassificadosForm{
+        width: 90%;
+    }
+}  
